@@ -1,0 +1,11 @@
+.container { 
+padding: 400px 200px; /* This gives our headings a bit of breathing room */ 
+} 
+.js-background-1 { 
+color:#fff;
+background: transparent url(dessert8.jpg) center 0 no-repeat; 
+} 
+.js-background-2 { 
+color:#fff;
+background: transparent url(cloud.jpg) center 0 no-repeat; 
+}

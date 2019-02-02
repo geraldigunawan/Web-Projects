@@ -1,0 +1,907 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;margin:0;padding:0;}fieldset,img{display:block; border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul {list-style:none;}caption,th {text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym {border:0;}
+
+body{
+	font-family: 'Actor', sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+a{
+	text-decoration: none;
+	outline: none;
+}
+a:hover{
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	text-transform: uppercase;
+	font-weight:lighter;
+}
+#wrapper{
+	width: 100%;
+}
+	#header{
+		width: 100%;
+		background:#000 repeat-x;
+		position: relative;
+		height: 54px;
+		z-index:1000;
+	}
+		#logo{
+			width: 160px;
+			height: 150px;
+			background: url(../images/logo.jpg) no-repeat top center;
+			position: absolute;
+			left: 50%;
+			margin-left: -80px;
+			top: 0;
+			text-indent: -9999px;
+		}
+		#menu{
+			max-width: 800px;
+			display: block;
+			margin: 0 auto;
+		}
+			#menu ul{
+				display: block;
+			}
+				#menu ul li{
+					width: 20%;
+					height: 50px;
+					float: left;
+					text-align: center;
+					line-height: 50px;
+					text-transform: uppercase;
+					font-family: 'Yanone Kaffeesatz', sans-serif;
+					font-size: 24px;
+					font-weight: 300;
+					border-bottom: 1px solid #A5CD39;
+				}
+				#menu ul li a{
+					display: block;
+					color: #979797;
+					height: 50px;
+					text-align:center;
+				}
+				#menu ul li a:hover,
+				#menu ul li.selected a{
+					background: url(../images/menuBg.png) 0 0 repeat-x;
+					height: 50px;
+					border: none;
+					color: #fff;
+				}
+				
+/*				
+				#menu ul li:first-child a{
+					border-bottom: 4px solid #A5CD39;
+				}
+				#menu ul li:nth-child(2) a{
+					border-bottom: 4px solid #8AC43F;
+				}
+				#menu ul li:nth-child(3){
+					width: 20%;
+				}
+				#menu ul li:nth-child(4) a{
+					border-bottom: 4px solid #009045;
+				}
+				#menu ul li:last-child a{
+					border-bottom: 4px solid #006837;
+				}
+				#menu ul li a{
+					display: block;
+					color: #979797;
+					height: 50px;
+					text-align:center;
+				}
+				#menu ul li:first-child a:hover, #menu ul li:nth-child(2) a:hover, #menu ul li:nth-child(4) a:hover, #menu ul li:last-child a:hover, #menu ul li.selected a,
+				#menu ul li:first-child.selected, #menu ul li:nth-child(2).selected, #menu ul li:nth-child(4).selected, #menu ul li:last-child.selected{
+					background: url(../images/menuBg.png) 0 0 repeat-x;
+					height: 54px;
+					border: none;
+					color: #fff;
+				}
+				#menu ul li:nth-child(2).selected, #menu ul li:nth-child(2) a:hover{
+					background-position: 0 -54px;
+				}
+				#menu ul li:nth-child(4).selected, #menu ul li:nth-child(4) a:hover{
+					background-position: 0 -108px;
+				}
+				#menu ul li:last-child.selected, #menu ul li:last-child a:hover{
+					background-position: 0 -162px;
+				}
+*/
+
+	#content{
+		width: 100%;
+		background: #FFF url(../images/content.jpg) repeat-x;
+		overflow:hidden;
+		padding:20px 0 0;
+	}
+		.contentBox{
+			width: 100%;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+		.banner img{
+			width:100%;
+			display:block;
+		}
+		.contentBox ul.slider li img{
+			width: 100%;
+		}
+		.locationBox{
+			width: 100%;
+			display: block;
+			overflow: hidden;
+			margin: 0 auto;
+			background: #333333;
+		}
+			.locationBox .container{
+				max-width: 960px;
+				overflow:hidden;
+				margin:0 auto;
+			}
+			.contentBox ul li{
+				position: relative;
+				display: block;
+			}
+				.contentBox ul li div.imageDesc{
+					min-width: 920px;
+					background:url(../images/trasnparent.png) no-repeat top center;
+					display: block;
+					left: 50%;
+					margin-left: -460px;
+					position: absolute;
+					bottom: 0;
+					height: 72px;
+					text-align:center;
+					line-height: 72px;
+					color: #4D4D4D;
+				}
+				.contentBox ul li h1{
+					font-size: 60px;
+					font-weight: lighter;
+				}
+			.locationCon{
+				width: 33.3334%;
+				min-height: 295px;
+				background: #333;
+				float: left;
+				padding-top: 30px;
+				position: relative;
+				color: #fff;
+				font-size: 10px;
+			}
+				.locationWrapper{
+					width: 100%;
+					position: absolute;
+					bottom: -30px;
+				}
+				.locationWrapper .image{
+					width: 100%;
+					display:block;
+				}
+				.locationWrapper .image img{
+					overflow: hidden;
+					display: block;
+				}
+				.locationWrapper .desc{
+					padding: 5px 20px 20px;
+					min-height:70px;
+					font-size: 12px;
+				}
+				.locationWrapper .desc h3{
+					font-size: 28px;
+					margin-bottom: 5px;
+				}
+				.locationWrapper .desc h3 a{
+					color: #A5CD39;
+				}
+				.quickLook{
+					width: 100%;
+					height: 30px;
+					line-height:28px;
+					display:block;
+					color: #000;
+					background: #A5CD39;
+					text-align:center;
+					font-size: 16px;
+					font-weight: 300;
+					font-family: 'Yanone Kaffeesatz', sans-serif;
+					text-transform:uppercase;
+				}
+		.infoCon{
+			width: 100%;
+			height: 95px;
+			background: #1A1A1A;
+			margin: 0 auto;
+		}
+			.infoCon ul{
+				width: 320px;
+				margin: 0 auto;
+			}
+				.infoCon ul li{
+					float: left;
+					width: 29.6875%;
+					text-align: center;
+					height: 95px;
+					margin-right: 3.75%;
+				}
+				.infoCon ul li:last-child{
+					margin-right: 3.4375%;
+				}
+				.infoCon ul li a{
+					width: 100%;
+					height: 77px;
+					display:block;
+					padding: 18px 0 0;
+					color: #fff;
+					text-transform:uppercase;
+					font-size:16px;
+					font-family: 'Yanone Kaffeesatz', sans-serif;
+					font-weight: 300;
+				}
+				.infoCon ul li img{
+					margin: 0 auto 10px;
+				}
+		.contentWrap{
+			width: 960px;
+			display: block;
+			margin: 140px auto 20px;
+		}
+			.productCon{
+				width: 960px;
+				display: block;
+				margin-bottom: 20px;
+				overflow:hidden;
+			}
+			.productCon:last-child{
+				margin-bottom:40px;
+			}
+				.productBox{
+					width: 480px;
+					height:300px;
+					float: left;
+					overflow:hidden;
+				}
+				.productBox h1 a{
+					font-size: 48px;
+					height: 60px;
+					line-height: 60px;
+					color: #A6CE39;
+					background: #000;
+					padding: 0 0 0 25px;
+					font-family: 'Yanone Kaffeesatz', sans-serif;
+					text-transform: uppercase;
+					width: 100%;
+					display: block;
+				}
+					.productDesc{
+						width: 440px;
+						overflow: hidden;
+						padding: 20px;
+						font-size: 12px;
+						line-height: 20px;
+					}
+					.moreDetailBtn{
+						background: #A6CE39;
+						color: #000;
+						font-size: 14px;
+						padding: 10px 0;
+						overflow: hidden;
+						display: block;
+						width: 110px;
+						text-align: center;
+						margin: 10px 0 0;
+					}
+					.moreDetailBtn:hover{
+						background: #000;
+						color: #A6CE39;
+					}
+		.contentCon{
+			width: 960px;
+			display: block;
+			overflow: hidden;
+			border-bottom: 5px solid #000;
+		}
+		.contentCon:last-child{
+			border: none;
+		}
+		.leftContent{
+			width: 240px;
+			display: block;
+			overflow: hidden;
+			float: left;
+		}
+			.titlePro{
+				width: 230px;
+				height: 48px;
+				display: block;
+				padding: 0 0 0 10px;
+				color: #fff;
+				background: #000;
+				line-height: 48px;
+			}
+			.titlePro h3{
+				font-size: 32px;
+			}
+			.leftContent ul{
+				width: 240px;
+				display: block;
+			}
+				.leftContent ul li{
+					width: 240px;
+					height: 32px;
+					line-height: 32px;
+					font-size: 20px;
+					font-family: 'Yanone Kaffeesatz', sans-serif;
+					text-transform: uppercase;
+					border-bottom: 1px solid #A5CD39;
+					font-weight:lighter;
+				}
+					.leftContent ul li a{
+						background: #4D4D4D;
+						width: 230px;
+						height: 32px;
+						padding: 0 0 0 10px;
+						color: #fff;
+						display: block;
+					}
+					.leftContent ul li a:hover, .leftContent ul li a.selected{
+						background: #000;
+						color: #A5CD39;
+					}
+		.rightContent{
+			width: 720px;
+			display: block;
+			overflow: hidden;
+			float: left;
+		}
+			.tabContainer{
+				width: 960px;
+				display: block;
+				height: 32px;
+				border-bottom: 5px solid #000;
+			}
+			.tabCon, .rightContent .selected{
+				padding: 0 10px;
+				height: 48px;
+				float: left;
+				color: #fff;
+				line-height: 48px;
+				margin-right: 3px;
+				background: #333333;
+				cursor: pointer;
+			}
+			.rightContent .selected{
+				background: #A5CD39;
+			}
+			.tabCon:last-child{
+				margin-right: 0;
+			}
+				.tabCon h3{
+					font-size: 32px;
+				}
+		.greenBar{
+			width: 960px;
+			height: 20px;
+			display: block;
+			background: #A5CD39;
+		}
+			.galListTab, .tabContainer .selected{
+				padding: 0 10px;
+				height: 32px;
+				line-height: 32px;
+				background: #333333;
+				float: left;
+				display: block;
+				margin-right: 2px;
+				cursor: pointer;
+			}
+			.galListTab:hover, .tabContainer .selected{
+				background: #A6CE39;
+			}
+			.galListTab:hover h3, .tabContainer .selected h3{
+				color: #fff;
+			}
+				.galListTab h3{
+					font-size: 24px;
+					color: #999;
+				}
+			.galListCon{
+				width: 960px;
+				display: block;
+				overflow: hidden;
+				padding: 10px 0 0;
+			}
+				.galListImg{
+					width: 230px;
+					height: 230px;
+					margin: 0 5px 10px;
+					float: left;
+					display: block;
+					position: relative;
+				}
+					.galListImg img{
+						overflow: hidden;
+						display: block;
+					}
+				.viewMore{
+					width: 220px;
+					height: 45px;
+					position: absolute;
+					bottom: 0;
+					background: url(../images/overlay.png) no-repeat top center;
+					display: none;
+					text-align: left;
+					padding: 40px 0 0 10px;
+				}
+					.viewMore h3{
+						color: #A6CE39;
+						font-size:20px;
+						text-transform: none;
+						font-family: 'Actor', sans-serif;
+					}
+					.viewMore a{
+						color: #fff;
+						text-transform: none;
+					}
+		.imgPro{
+			width: 960px;
+			display: block;
+			height: 120px;
+			background: #000;
+		}
+			.productWrap{
+				width: 720px;
+				padding: 10px 0 20px;
+				overflow: hidden;
+				display: block;
+			}
+			#tab2, #tab_2, #tab_3, #tab_4, #tab_5{
+				display: none;
+			}
+				.productContainer{
+					width: 220px;
+					overflow: hidden;
+					display: block;
+					margin: 0 10px 10px;
+					float: left;
+				}
+					.productImage{
+						width: 220px;
+						display: block;
+						height: 220px;
+						margin: 0 0 5px;
+						background: #E4E4E4;
+						position: relative;
+						cursor: url("../images/zoom.png"), auto;
+					}
+						.productImage img{
+							width: 220px;
+							overflow: hidden;
+							display: block;
+						}
+						.tag{
+							width: 100px;
+							padding: 0 0 0 10px;
+							display: block;
+							background: #A5CD39;
+							height: 33px;
+							line-height: 33px;
+							font-size:18px;
+							text-transform: uppercase;
+							font-family: 'Yanone Kaffeesatz', sans-serif;
+							position: absolute;
+							bottom: 0;
+							right: 0;
+							color:#000;
+						}
+					.productDescription h3 a{
+						color: #A5CD39;
+						font-size: 24px;
+						text-transform: none;
+					}
+					.productDescription span{
+						color: #333333;
+						display: block;
+						font-family: 'Yanone Kaffeesatz', sans-serif;
+						font-size: 16px;
+						line-height: 16px;
+					}
+		.about_us{
+			width:960px;
+			display:block;
+			padding:10px 0 30px;
+			margin:0 auto;
+		}
+			.about_us_container{
+				width:640px;
+				display:block;
+				overflow:hidden;
+				margin:0 auto;
+				color:#666;
+				font-size:14px;
+			}
+			.about_us_container h2{
+				font-size:36px;
+			}
+	#footer{
+		width: 100%;
+		background: #000;
+		height: 35px;
+		color: #CACACA;
+		padding: 18px 0 17px;
+		text-align: center;
+		font-family: 'Actor', sans-serif;
+	}
+		#footer p:first-child{
+			font-size: 12px;
+		}
+		#footer p:last-child{
+			font-size: 8px;
+		}
+.overlay{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.8;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 1000;
+}
+.lightBoxCon{
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1001;
+	width: 700px;
+	height: 380px;
+	margin-left: -430px;
+	margin-top: -225px;
+	padding:35px 80px;
+}
+	.lightBox{
+		max-width: 960px;
+		margin: 0 auto;
+		position: relative;
+	}
+		.lightBoxWrap{
+			overflow: hidden;
+			background: #fff;
+			display: block;
+		}
+		.lightBoxImg{
+			overflow: hidden;
+			float: left;
+			min-height: 380px;
+			min-width: 380px;
+		}
+		.lightBoxLoader{
+			display: block;
+			width: 380px;
+			height: 380px;
+			float: left;
+			background: url(../images/ajax-loader.gif) no-repeat center center;
+		}
+			.lightBoxImg img{
+				overflow: hidden;
+				display: block;
+				margin: 0 auto;
+				min-width: 380px;
+				min-height: 380px;
+				max-width: 640px;
+				max-height: 640px;
+			}
+		.lightBoxDesc{
+			width: 280px;
+			padding: 15px 20px;
+			display: block;
+			float: left;
+			color: #666666;
+			font-size: 16px;
+		}
+			.lightBoxDesc h3{
+				font-size: 32px;
+				color: #A5CD39;
+			}
+			.lightBoxDesc span{
+				display: block;
+			}
+		.close{
+			width: 32px;
+			height: 32px;
+			display: block;
+			background: url(../images/close.png) no-repeat top center;
+			position: absolute;
+			top: -15px;
+			right: -15px;
+			cursor: pointer;
+		}
+		.leftArrow, .rightArrow{
+			width: 60px;
+			height: 60px;
+			display: block;
+			background: url(../images/button.png) no-repeat top left;
+			position: absolute;
+			top: 50%;
+			margin-top: -30px;
+			cursor: pointer;
+		}
+		.leftArrow{
+			left: -80px;
+		}
+		.rightArrow{
+			background-position: top right;
+			right: -80px;
+		}
+		.countBar{
+			width:50px;
+			height: 25px;
+			display: block;
+			position: absolute;
+			bottom: -27px;
+			left: 50%;
+			margin-left: -30px;
+			background: #A6CE39;
+			text-align: center;
+			line-height: 25px;
+			padding: 0 5px;
+			color: #4D4D4D;
+		}
+		
+.contactCon{
+	display:block;
+	width:960px;
+	overflow:hidden;
+	margin:140px 0 40px;
+	background:#1A1A1A;
+}
+	.contactLeft, 
+	.contactRight{
+		display:block;
+		width:480px;
+		overflow:hidden;
+		float:left;
+	}
+		.contactLeft{
+			background:#a5cd39;
+		}
+		.contactRight{
+			color:#FFF;
+			width:480px;
+		}
+		.contactLeftTop{
+			margin:20px;
+			color:#000;
+		}
+			.contactLeftTop h3{
+				font-size:32px;
+				margin:0 0 10px;
+				color:#060;
+			}
+			.contactLeftTop h4{
+				font-size:24px;
+				margin:0 0 10px;
+			}
+			.contactLeftTop p{
+				font-size:14px;
+				line-height:20px;
+				margin:0 0 10px;
+				color:#060;
+			}
+			.contactLeftTop a{
+				font-size:14px;
+				text-decoration:underline;
+				color:#000;
+			}
+				.contactLeftTop a:hover{
+					text-decoration:none;
+					color:#060;
+				}
+			.contactLeftTop table tr td{
+				padding:0 20px 5px 0;
+				margin:0 0 5px;
+				font-size:14px;
+				vertical-align:top;
+			}
+	.formContainer{
+		margin:20px;
+	}
+		.formField{
+			display:block;
+			margin-bottom:20px;
+		}
+		.formContainer p{
+			font-size:18px;
+			margin:0 0 5px;
+		}
+		.formContainer input[type="text"], .formContainer select.styled, .formContainer textarea{
+			width:98%;
+			border:none;
+			padding:5px;
+			margin:0 0 10px;
+			font-size:14px;
+			font-family: 'Actor', sans-serif;
+			border-radius:5px;
+		}
+		.formContainer select.styled{
+			width:100%;
+			margin:0;
+		}
+		.formContainer textarea{
+			height:190px;
+			resize:none;
+		}
+
+	.sendMessage{
+		width:160px;
+		display:block;
+		height:35px;
+		background:#A5CD39;
+		color:#000;
+		text-align:center;
+		line-height:35px;
+		font-size:14px;
+		text-transform:uppercase;
+		border-radius:5px;
+	}
+	.sendMessage:hover{
+		background:#000;
+		color:#A5CD39;
+	}
+/*Select*/
+span.customSelect {
+	background-color: #fff;
+	color:#000;
+	padding:0 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px 5px;
+	height:28px;
+	line-height:28px;
+	font-size:14px;
+	margin-bottom:10px;
+}
+span.customSelect.changed {
+    background-color: #fff;
+}
+.customSelectInner {
+	background:url(../images/arrow.png) no-repeat top right;
+	height:28px;
+}
+
+/*CSS SLIDER*/
+.bx-wrapper{
+	margin: 0 !important;
+}
+.bx-wrapper .bx-viewport{
+	border: none !important;
+	box-shadow: none !important;
+	left: 0px !important;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+	bottom: 100px !important;
+	z-index: 100 !important;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: url(../images/bulletsSlider.png) no-repeat -0 -12px !important;
+	width: 12px !important;
+	height: 12px !important;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: url(../images/bulletsSlider.png) no-repeat 0 0 !important;
+}
+
+iframe[src="about:blank"]{display:none;}
+header iframe,
+section iframe,
+footer iframe,
+div iframe{ display:inline; }
+#boxer .boxer-close {
+	background:url(../images/close.png) no-repeat top center !important;
+	top:-18px !important;
+	right:-18px !important;
+}
+@media screen and (min-width: 707px) and (max-width: 946px){
+	.locationCon{
+		min-height: 310px !important;
+	}
+	.contentBox ul li div.imageDesc{
+		height: 70px;
+		line-height: 70px;
+	}
+	.contentBox ul li h1{
+		font-size: 56px;
+	}
+}
+@media screen and (min-width: 640px) and (max-width: 706px){
+	.locationCon{
+		min-height: 328px !important;
+	}
+	.contentBox ul li div.imageDesc{
+		height: 50px;
+		line-height: 50px;
+	}
+	.contentBox ul li h1{
+		font-size: 36px;
+	}
+}
+@media screen and (min-width: 320px) and (max-width: 639px){
+	#header{
+		min-height: 348px !important;
+		position: relative;
+	}
+	#menu{
+		position: absolute;
+		top: 150px;
+		left: 50%;
+		margin-left: -80px;
+		min-width: 160px;
+		display:block;
+		}
+			#menu ul{
+			}
+				#menu ul li{
+					float: none !important;
+					width: 100%;
+					display:block;
+				}
+				#menu ul li:nth-child(3){
+					display: none !important;
+				}
+	.contentBox ul li div.imageDesc{
+		height: 35px;
+		line-height: 35px;
+	}
+	.contentBox ul li h1{
+		font-size: 24px;
+	}
+	.locationCon{
+		width: 98%;
+		float: none;
+		padding-top: 0;
+		min-height: 0 !important;
+		height: auto !important;
+		padding: 0 2%;
+		margin: 0 0 2%;
+	}
+	.locationCon:first-child{padding-top: 2%;}
+	.locationWrapper{
+		position: static;
+		width?100%;
+		display: block;
+		overflow: hidden;
+		}
+	.locationWrapper .image{
+		width: 50%;
+		float: left;
+		display: block;
+	}
+	.locationWrapper .image img{
+		width: 100%;
+		overflow:hidden;
+		display: block;
+	}
+	.locationWrapper .desc{
+		float: left;
+		width: 40% !important;
+		padding: 5px 10px 0;
+		font-size: 10px;
+	}
+	.locationWrapper .desc h3{
+		font-size: 20px;
+		margin-bottom: 5px;
+	}
+	.quickLook{display: none;}
+
+
+}
